@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACE - Index Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ACE - Index Generator</h1>
+    <form id="urlForm">
+      <input type="text" id="inputUrl" name="inputUrl" placeholder="Google Drive File Link" onblur="restorePlaceholder()" />
+      <button type="button" class="button" onclick="generateLinks()">&#9881 Generate</button>
+      <!-- Clear button -->
+      <button type="button" class="button clear-button" onclick="clearBoxes()">&#128465 Clear</button>
+    </form>
+    <!-- Source Link Box -->
+    <div class="result-box" id="sourceLinkBox">
+      <h2>&#128161 Source</h2>
+      <div class="source-link-content">
+        <p id="sourceLink">#</p>
+      </div>
+    </div>
+    <!-- Permanent Link Box -->
+    <div class="result-box" id="resultBox">
+      <h2>&#128194 Permanent Link</h2><h3>&#9203 Validity: Forever</h3>
+      <button id="copyButton" class="button" onclick="copyPermanentLink()">Copy</button>
+      <a id="visitButton" href="#" target="_blank" class="button">Download</a>
+    </div>
+    <!-- Temporary Link Box -->
+    <div class="result-box" id="temporaryResultBox">
+      <h2>&#9889 Temporary Link</h2><h3>&#9203 Validity: 7 days</h3>
+      <button id="temporaryCopyButton" class="button" onclick="copyTemporaryLink()">Copy</button>
+      <a id="temporaryVisitButton" href="#" target="_blank" class="button">Download</a>
+    </div>
+    <!-- Credits here -->
+    <div class="credits">&#169 Credits: <a href="https://t.me/ACE_ML" target="_blank">@ACE_ML</a></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
