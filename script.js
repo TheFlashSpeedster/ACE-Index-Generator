@@ -50,7 +50,7 @@ function restorePlaceholder() {
 function generateLinks() {
   var inputUrl = document.getElementById('inputUrl').value;
   var fileId = extractFileId(inputUrl);
-  var temporaryUrl = 'https://gd.ace-ml.eu.org/generate.aspx?id=' + fileId;
+  var temporaryUrl = 'https://index-dl.ace-ml.eu.org/generate.aspx?id=' + fileId;
 
   // Send a request to the generate URL to get the JSON response for the temporary link
   fetch(temporaryUrl)
