@@ -71,7 +71,7 @@ function generateLinks() {
       document.getElementById('sourceLink').textContent = sourceUrl;
 
       // Update permanent link
-      var permanentUrl = 'https://gd.ace-ml.eu.org/direct.aspx?id=' + fileId;
+      var permanentUrl = 'https://index-dl.ace-ml.eu.org/direct.aspx?id=' + fileId;
       document.getElementById('visitButton').href = permanentUrl;
 
       // Update temporary link
